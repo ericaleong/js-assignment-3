@@ -139,7 +139,6 @@ fetch(url)
       </div>
     `
     document.getElementById('library-image').src = separateData[counter].img;
-    debugger
     document.getElementById("location-of-library").innerHTML = separateData[counter].libraryLocation;
     document.getElementById('mock-map').src = separateData[counter].libraryMap;
 

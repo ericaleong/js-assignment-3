@@ -18,7 +18,7 @@ body {
 
   max-width: 100vw;
 
-  font-size: 80px;
+  font-size: calc(36px + (90 - 36) * ((100vw - 300px) / (1600 - 300)));
   font-family: 'Playfair Display', serif;
   font-weight: 900;
 
@@ -180,4 +180,60 @@ body {
 
 #button-backward:hover {
   transform: translateX(-5px);
+}
+
+/* -------- Time to make things responsive! --------*/
+@media only screen and (max-width: 1196px) {
+  #button-forward, #button-backward {
+    position: fixed
+  }
+
+  #button-backward {
+    left: 5px;
+  }
+
+  #button-forward {
+    right: 5px;
+  }
+}
+
+@media only screen and (max-width: 1110px) {
+  .single-library {
+    justify-content: center;
+  }
+
+  .page2 {
+    border-right: none;
+  }
+  .page3 {
+    margin-top: 5vh;
+  }
+}
+
+@media only screen and (max-width: 766px) {
+  .page1 {
+    border-right: none;
+    padding-right: 5vw;
+  }
+
+  .page2 {
+    margin-top: 5vh;
+    padding-left: 3vw;
+    border-right: 1px #363330 solid;
+    align-items: center;
+
+  }
+
+  .page3 {
+    margin-left: 5vw;
+  }
+}
+
+@media only screen and (max-width: 629px) {
+  .page2 {
+    border-right: none;
+    padding-right: 5vw;
+
+    align-items: center;
+  }
 }

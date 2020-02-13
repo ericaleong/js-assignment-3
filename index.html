@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calgary Libraries API</title>
+  <link rel="stylesheet" href="app.css">
+  <script src="https://kit.fontawesome.com/f1cf5f2ed6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+  <div class="libraries" id="libraries">
+
+    <div class="header">Calgary Libraries</div>
+    <div class="subheader">Sign up for your free library card today!</div>
+
+
+    <div class="single-library">
+      <button id="button-backward" type="button"><i class="fas fa-angle-left fa-4x"></i></button>
+      
+      <div class="page1">
+        <h1 class="library-name">Library</h1>
+        <img id="library-image" src="https://api.time.com/wp-content/uploads/2019/08/central-library-calgary-canada.jpg?h=580" alt="calgary-library">
+      </div>
+      
+      <div class="page2">
+        <p class="hours-title">Hours</p>
+        <p class="hours">Hours</p>
+        <p class="phone-title">Phone</p>
+        <p class="phone">Phone</p>
+      </div>
+
+      <div class="page3">
+        <p class="location-title">Location</p>
+        <p id="location-of-library">Location</p>
+        <p class ="postalcode">Postal Code</p>
+        <img id="mock-map" src="assets/central-library.png" alt="mock map" width=200 height=300>
+      </div>
+
+      <button id="button-forward" type="button"><i class="fas fa-angle-right fa-4x"></i></button>
+
+  </div>
+
+  <script src="./app.js"></script>
+
+  </div>
+</body>
+</html>

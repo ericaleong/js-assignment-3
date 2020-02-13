@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Playfair+Display&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #edece6;
+  color: #363330;
+}
+
+
+/* -------- Header/Subheader Section --------*/
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-bottom: 2.5px solid #363330;
+
+  max-width: 100vw;
+
+  font-size: 80px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.subheader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-bottom: 2.5px solid #363330;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+
+  max-width: 100vw;
+
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+
+/* -------- Main Section --------*/
+.single-library {
+  margin-top: 3vh;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  height: 400px;
+}
+
+
+/* -------- Library & Image Section --------*/
+.page1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  padding-right: 3vw;
+  border-right: 1px #363330 solid;
+
+  max-width: 600px;
+  min-width: 300px;
+
+  font-family: 'Playfair Display', serif;
+  font-size: 12px;
+  font-weight: 900;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.library-name {
+  margin-top: 0;
+}
+
+.page1 img {
+  width: 250px;
+  height: 350px;
+
+  object-fit: cover;
+
+  filter: saturate(85%);
+  opacity: 75%;
+}
+
+
+/* -------- Hours & Phone Section --------*/
+.page2 {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  padding-left: 3vw;
+  border-right: 1px #363330 solid;
+
+  max-width: 400px;
+  min-width: 300px;
+}
+
+.hours-title, .phone-title, .location-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 5vw;
+  padding-right: 5vw;
+
+  font-size: 28px;
+  font-style: italic;
+
+  border-top: 1px #363330 solid;
+  border-bottom: 1px #363330 solid;
+}
+
+.phone-title {
+  margin-top: 5vh;
+}
+
+.hours { 
+  padding: 0;
+  margin: 0;
+
+  font-size: 14px;
+  font-family: 'Playfair Display', serif;
+
+  text-align: justify;
+}
+
+
+/* -------- Location Section --------*/
+.page3{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  margin-right: 5vw;
+  padding-left: 5vw;
+}
+
+#location-of-library {
+  margin-bottom: 0;
+
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+}
+
+.postalcode{
+  margin-top: 0;
+
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+}
+
+#mock-map {
+  opacity: 75%;
+}
+
+
+/* -------- Buttons --------*/
+#button-forward, #button-backward {
+  margin-top: 30vh;
+  padding: 5px;
+  border: none;
+
+  height: 50px;
+
+  color: #363330;
+  background-color: #edece6;
+}
+
+#button-forward:hover {
+  transform: translateX(5px);
+}
+
+#button-backward:hover {
+  transform: translateX(-5px);
+}
